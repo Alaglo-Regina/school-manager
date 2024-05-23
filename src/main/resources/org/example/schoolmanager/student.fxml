@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #00353F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.schoolmanager.controllers.StudentController">
+   <children>
+      <VBox layoutX="33.0" layoutY="56.0">
+         <children>
+            <Label text="Nom" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <TextField fx:id="nomTxt" prefWidth="190.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="33.0" layoutY="140.0">
+         <children>
+            <TextField fx:id="prenomTxt" prefWidth="190.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="33.0" layoutY="229.0" />
+      <HBox layoutX="29.0" layoutY="416.0" spacing="20.0">
+         <children>
+            <Button fx:id="validerBt" mnemonicParsing="false" onAction="#onSubmitUser" prefHeight="30.0" prefWidth="80.0" text="Valider">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="annulerBt" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Annuler">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView layoutX="252.0" layoutY="54.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="89.0" text="Identifiant" />
+            <TableColumn fx:id="nomColumn" prefWidth="178.0" text="Nom" />
+            <TableColumn fx:id="prenomColumn" prefWidth="129.0" text="Prenom" />
+            <TableColumn fx:id="classColum" prefWidth="133.0" text="Classe" />
+         </columns>
+      </TableView>
+      <Button fx:id="modifierBt" layoutX="560.0" layoutY="476.0" mnemonicParsing="false" style="-fx-background-color: #00417B;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimerBt" layoutX="681.0" layoutY="476.0" mnemonicParsing="false"  style="-fx-background-color: #A80000;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="301.0" text="Lieu de naissance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="placetxt" layoutX="34.0" layoutY="326.0" prefHeight="30.0" prefWidth="190.0" />
+      <Label layoutX="33.0" layoutY="242.0" text="Date de naissance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Bithtxt" layoutX="27.0" layoutY="267.0" />
+      <Label layoutX="33.0" layoutY="356.0" text="Etat" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="statetxt" layoutX="33.0" layoutY="381.0" prefHeight="30.0" prefWidth="190.0" />
+      <Label layoutX="34.0" layoutY="180.0" text="Classe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="111.0" text="Prenom" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="classtxt" layoutX="34.0" layoutY="205.0" prefHeight="30.0" prefWidth="190.0" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+   </padding>
+</AnchorPane>
